@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интервальный музыкальный проигрыватель</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player-card">
+            <h1>Музыкальный проигрыватель</h1>
+            <p class="subtitle">Воспроизведение песен через заданный интервал</p>
+            
+            <div class="input-group">
+                <label for="interval">Интервал между песнями (секунды):</label>
+                <input type="number" id="interval" min="5" max="60" value="10">
+            </div>
+            
+            <div class="button-group">
+                <button id="startBtn" class="btn start">Начать</button>
+                <button id="stopBtn" class="btn stop">Остановить</button>
+            </div>
+            
+            <div class="now-playing">
+                <h3>Сейчас играет:</h3>
+                <p id="currentSong">—</p>
+                <audio id="audioPlayer" controls></audio>
+            </div>
+            
+            <div class="song-list">
+                <h3>Каталог песен (4):</h3>
+                <ul id="songCatalog"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
