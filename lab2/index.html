@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет посетителей поликлиники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Поликлиника "Здоровье"</h1>
+        <h2>Учет посетителей</h2>
+        
+        <div class="form-section">
+            <h2 id="formTitle">Добавить нового посетителя</h2>
+            <form id="visitorForm">
+                <input type="hidden" id="editId" value="">
+                
+                <div class="form-group">
+                    <label for="fullName">ФИО:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Введите полное имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Адрес:</label>
+                    <input type="text" id="address" name="address" required placeholder="Введите адрес">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+375 (XX) XXX-XX-XX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastVisit">Дата последнего посещения:</label>
+                    <input type="date" id="lastVisit" name="lastVisit" required>
+                </div>
+                
+                <div class="buttons">
+                    <button type="submit" id="submitBtn" class="btn-primary">Добавить</button>
+                    <button type="button" id="cancelEdit" class="btn-secondary" style="display: none;">Отмена</button>
+                </div>
+            </form>
+        </div>
+        
+        <h2>Список посетителей</h2>
+        <table id="visitorsTable">
+            <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Адрес</th>
+                    <th>Телефон</th>
+                    <th>Дата последнего посещения</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody id="visitorsList">
+                <!-- Записи будут добавляться с помощью JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
