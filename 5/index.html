@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файловая система</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Файловая система</h1>
+    
+    <div class="container">
+        <div class="panel">
+            <h2>Добавить каталог</h2>
+            <select id="parentDir">
+                <option value="null">Корневой каталог</option>
+            </select>
+            <input type="text" id="dirName" placeholder="Название каталога">
+            <input type="number" id="dirSize" placeholder="Объем (МБ)" min="0" step="0.1">
+            <button onclick="addDirectory()">Добавить каталог</button>
+            
+            <h2>Операции</h2>
+            <button onclick="findMinimalFile()">Найти минимальный файл</button>
+            <input type="text" id="searchLetter" placeholder="Введите букву" maxlength="1" style="width: 50px;">
+            <button onclick="findFilesByLetter()">Найти файлы по букве</button>
+            
+            <div class="result" id="result"></div>
+        </div>
+        
+        <div class="panel">
+            <h2>Структура файловой системы</h2>
+            <ul id="fileSystem">
+                <!-- Здесь будет отображаться дерево файловой системы -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

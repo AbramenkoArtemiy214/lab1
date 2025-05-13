@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#season-content {
+    min-height: 300px;
+    border: 1px dashed #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.season-data {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.additional-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef7ff;
+    border-radius: 5px;
+}
+
+.load-btn {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 15px;
+}
+
+.autumn-btn { background-color: #e67e22; color: white; }
+.winter-btn { background-color: #3498db; color: white; }
+.spring-btn { background-color: #2ecc71; color: white; }
+.summer-btn { background-color: #f1c40f; color: white; }
+
+.season-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

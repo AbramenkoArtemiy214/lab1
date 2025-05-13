@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Времена года</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Выберите время года</h1>
+        <div class="buttons">
+            <button onclick="loadSeason('autumn')">Осень</button>
+            <button onclick="loadSeason('winter')">Зима</button>
+            <button onclick="loadSeason('spring')">Весна</button>
+            <button onclick="loadSeason('summer')">Лето</button>
+        </div>
+        
+        <div id="season-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
